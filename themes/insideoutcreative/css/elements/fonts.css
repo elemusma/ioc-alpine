@@ -1,0 +1,79 @@
+.text-gray {
+    color: #585556;
+}
+
+.text-gray-light {
+    color: #8d8d8d;
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 3px black;
+}
+
+.text-black {
+    color: black;
+}
+
+.lh-1 {
+    line-height: 1;
+}
+
+.accent {
+    color: #231f20;
+}
+
+.text-accent {
+    color: #fe8a3e;
+}
+
+.text-accent-green {
+    color: #b2ae43;
+}
+
+.text-golden {
+    color: #ddaf6c;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: 'proxima_novaregular';
+    /* font-family: broadsheet, serif; */
+    text-transform: uppercase;
+}
+
+.thin {
+    font-family: 'proxima_novathin';
+}
+
+.bold {
+    font-family: 'proxima_novabold';
+}
+
+.blair {
+    font-family: 'blair_itcmedium';
+}
+
+/* .h1,
+h1 {
+    font-size: 4.5rem;
+}
+
+.h2,
+h2 {
+    font-size: 3rem;
+}
+
+.h3,
+h3 {
+    font-size: 2.75rem;
+} */

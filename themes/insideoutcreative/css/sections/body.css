@@ -1,0 +1,155 @@
+:root {
+    --accent-primary: #231f20;
+    --accent-secondary: #fe8a3e;
+}
+
+body.nav-open {
+    overflow: hidden;
+}
+
+#body-overlay {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .25s ease-in-out;
+    background: rgba(0, 0, 0, .75);
+    z-index: 4;
+    pointer-events: none;
+}
+
+#body-overlay.activate {
+    opacity: 1;
+}
+
+.bg-accent {
+    background: #231f20;
+}
+
+.bg-accent-green {
+    background: #b2ae43;
+}
+
+.bg-gray {
+    background: #808080;
+}
+
+a.bg-accent:hover {
+    background: #181415;
+}
+
+.bg-accent-2 {
+    background: #ddaf6c;
+}
+
+.bg-gray {
+    background: #adadad;
+}
+
+.bg-gray1 {
+    background: #d9d9d9;
+}
+
+.bg-gray2 {
+    background: #dcdddf;
+}
+
+.bg-white-soft {
+    background: #f0f0f0;
+}
+
+.bg-black {
+    background: black;
+}
+
+.br-0 {
+    border-radius: 0;
+}
+
+.b-0 {
+    border: 0;
+}
+
+.border {
+    border: 3px solid white !important;
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+
+.overflow-h {
+    overflow: hidden;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+hr.text-white {
+    border-color: white;
+}
+
+.h-auto {
+    height: auto;
+}
+
+.w-auto {
+    width: auto;
+}
+
+/* content */
+.alignleft {
+    float: left;
+}
+
+@media screen and (max-width: 1199px) {
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .desktop-hidden {
+        display: none;
+    }
+}
+
+/* for cart page */
+.woocommerce-cart img.w-75.h-auto.wp-post-image,.woocommerce-checkout img.w-75.h-auto.wp-post-image {
+    height: 450px !important;
+}
+.wc-stripe-elements-field {
+    width: 100%;
+}
+
+.stripe-card-group {
+    width: 100%;
+}
+/*** Works on common browsers ***/
+::selection {
+    background-color: #fe8a3e;
+    color: #fff;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+    background-color: #fe8a3e;
+    color: #fff;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+    background-color: #fe8a3e;
+    color: #fff;
+}
+
+::-ms-selection {
+    background-color: #fe8a3e;
+    color: #fff;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+    background-color: #fe8a3e;
+    color: #fff;
+}

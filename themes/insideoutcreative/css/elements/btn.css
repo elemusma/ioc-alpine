@@ -1,0 +1,60 @@
+.intro h3 {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.accent-btn h3 {
+    top: 45%;
+    font-size: 1.25rem;
+}
+
+.btn.rounded {
+    border-radius: 18px !important;
+}
+
+a.btn {
+    transition: all .25s ease-in-out;
+}
+
+a.btn.bg-accent-green {
+    border: 3px solid #b2ae43;
+}
+
+a.btn.bg-black {
+    border: 3px solid black;
+}
+
+a.btn.bg-accent-green:hover {
+    color: #b2ae43 !important;
+}
+
+a.btn.bg-black:hover {
+    color: black !important;
+}
+
+a.btn:hover {
+    background: white;
+}
+
+input#searchsubmit {
+    background: var(--accent-primary);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+}
+
+a.bg-accent:hover,
+input#searchsubmit:hover {
+    background: var(--accent-secondary);
+}
+
+/* home */
+.col-intro-links:hover img {
+    filter: brightness(0.8);
+}
+
+.col-intro-links img {
+    transition: all .25s ease-in-out;
+}

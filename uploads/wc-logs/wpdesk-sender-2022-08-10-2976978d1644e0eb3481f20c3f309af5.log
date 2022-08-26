@@ -1,0 +1,2 @@
+2022-08-10T22:33:51+00:00 DEBUG Sender payload: {"click_action":"no","url":"https:\/\/alpineranch.net","localhost":"yes"}
+2022-08-10T22:33:53+00:00 DEBUG Sender response: {"headers":[],"body":"","response":{"code":false,"message":false},"cookies":[],"http_response":null}

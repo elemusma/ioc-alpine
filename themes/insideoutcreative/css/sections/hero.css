@@ -1,0 +1,42 @@
+body:not(.home) img.w-75.h-auto.wp-post-image {
+    height: 250px;
+    object-fit: cover;
+}
+
+.hero-content {
+    top: 5%;
+}
+
+.hero-overlay {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 1) 100%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-btn {
+    bottom: 5%;
+}
+
+.hero-btn .btn {
+    border: 4px solid;
+    box-shadow: 0px 0px 15px white;
+    border-radius: 15px;
+}
+
+/* @media screen and (max-width:767px){
+    .hero-btn {
+        bottom: -10%;
+    }
+} */
+/* section.hero {
+    min-height: 500px;
+    height: 100vh;
+} */
+/* .img-hero {
+    min-height: 300px;
+    height: 85vh;
+    object-fit: cover;
+} */

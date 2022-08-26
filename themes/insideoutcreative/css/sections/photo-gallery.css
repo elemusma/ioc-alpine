@@ -1,0 +1,13 @@
+.owl-nav button span {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 4rem;
+    color: #464646;
+}
+.owl-nav button.owl-prev span {
+    left: 0;
+}
+.owl-nav button.owl-next span {
+    right: 0;
+}

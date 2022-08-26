@@ -1,0 +1,191 @@
+2022-08-13T01:01:40+00:00 DEBUG [UpdateShipmentsCronTask.php:102] execute
+2022-08-13T01:01:40+00:00 DEBUG [OrderShipments.php:241] getInTransit, minStatusChangedTime: 1659488500, maxUpdatedTime: 1660330900, limit: 100, offset: 0
+2022-08-13T01:01:40+00:00 DEBUG [OrderShipments.php:264] Query: SELECT t_shipments.*, t_updated.meta_value AS updated, t_status_changed.meta_value AS changed
+			FROM wp_postmeta t_shipments 
+				INNER JOIN wp_postmeta t_updated ON t_updated.post_id = t_shipments.post_id AND t_updated.meta_key = 'wc-shippo-shipping_shipments_updated'
+				LEFT JOIN wp_postmeta t_status_changed ON t_status_changed.post_id = t_shipments.post_id AND t_status_changed.meta_key = 'wc-shippo-shipping_shipments_status_changed'
+			WHERE t_shipments.meta_key = 'wc-shippo-shipping_shipments' 
+				AND CAST(t_updated.meta_value AS SIGNED) <= 1660330900
+				AND (t_status_changed.meta_value IS NULL OR CAST(t_status_changed.meta_value AS SIGNED) >= 1659488500)
+			ORDER BY updated ASC
+			LIMIT 0,100
+2022-08-13T01:01:40+00:00 DEBUG [OrderShipments.php:270] Number of rows: 0
+2022-08-13T01:01:40+00:00 DEBUG [UpdateShipmentsCronTask.php:116] We have 0 shipments to check
+2022-08-13T01:01:40+00:00 DEBUG [UpdateShipmentsCronTask.php:138] finished
+2022-08-13T05:22:39+00:00 DEBUG [UpdateShipmentsCronTask.php:102] execute
+2022-08-13T05:22:39+00:00 DEBUG [OrderShipments.php:241] getInTransit, minStatusChangedTime: 1659504159, maxUpdatedTime: 1660346559, limit: 100, offset: 0
+2022-08-13T05:22:39+00:00 DEBUG [OrderShipments.php:264] Query: SELECT t_shipments.*, t_updated.meta_value AS updated, t_status_changed.meta_value AS changed
+			FROM wp_postmeta t_shipments 
+				INNER JOIN wp_postmeta t_updated ON t_updated.post_id = t_shipments.post_id AND t_updated.meta_key = 'wc-shippo-shipping_shipments_updated'
+				LEFT JOIN wp_postmeta t_status_changed ON t_status_changed.post_id = t_shipments.post_id AND t_status_changed.meta_key = 'wc-shippo-shipping_shipments_status_changed'
+			WHERE t_shipments.meta_key = 'wc-shippo-shipping_shipments' 
+				AND CAST(t_updated.meta_value AS SIGNED) <= 1660346559
+				AND (t_status_changed.meta_value IS NULL OR CAST(t_status_changed.meta_value AS SIGNED) >= 1659504159)
+			ORDER BY updated ASC
+			LIMIT 0,100
+2022-08-13T05:22:39+00:00 DEBUG [OrderShipments.php:270] Number of rows: 0
+2022-08-13T05:22:39+00:00 DEBUG [UpdateShipmentsCronTask.php:116] We have 0 shipments to check
+2022-08-13T05:22:39+00:00 DEBUG [UpdateShipmentsCronTask.php:138] finished
+2022-08-13T06:07:35+00:00 DEBUG [UpdateShipmentsCronTask.php:102] execute
+2022-08-13T06:07:35+00:00 DEBUG [OrderShipments.php:241] getInTransit, minStatusChangedTime: 1659506855, maxUpdatedTime: 1660349255, limit: 100, offset: 0
+2022-08-13T06:07:35+00:00 DEBUG [OrderShipments.php:264] Query: SELECT t_shipments.*, t_updated.meta_value AS updated, t_status_changed.meta_value AS changed
+			FROM wp_postmeta t_shipments 
+				INNER JOIN wp_postmeta t_updated ON t_updated.post_id = t_shipments.post_id AND t_updated.meta_key = 'wc-shippo-shipping_shipments_updated'
+				LEFT JOIN wp_postmeta t_status_changed ON t_status_changed.post_id = t_shipments.post_id AND t_status_changed.meta_key = 'wc-shippo-shipping_shipments_status_changed'
+			WHERE t_shipments.meta_key = 'wc-shippo-shipping_shipments' 
+				AND CAST(t_updated.meta_value AS SIGNED) <= 1660349255
+				AND (t_status_changed.meta_value IS NULL OR CAST(t_status_changed.meta_value AS SIGNED) >= 1659506855)
+			ORDER BY updated ASC
+			LIMIT 0,100
+2022-08-13T06:07:35+00:00 DEBUG [OrderShipments.php:270] Number of rows: 0
+2022-08-13T06:07:35+00:00 DEBUG [UpdateShipmentsCronTask.php:116] We have 0 shipments to check
+2022-08-13T06:07:35+00:00 DEBUG [UpdateShipmentsCronTask.php:138] finished
+2022-08-13T06:52:34+00:00 DEBUG [UpdateShipmentsCronTask.php:102] execute
+2022-08-13T06:52:34+00:00 DEBUG [OrderShipments.php:241] getInTransit, minStatusChangedTime: 1659509554, maxUpdatedTime: 1660351954, limit: 100, offset: 0
+2022-08-13T06:52:34+00:00 DEBUG [OrderShipments.php:264] Query: SELECT t_shipments.*, t_updated.meta_value AS updated, t_status_changed.meta_value AS changed
+			FROM wp_postmeta t_shipments 
+				INNER JOIN wp_postmeta t_updated ON t_updated.post_id = t_shipments.post_id AND t_updated.meta_key = 'wc-shippo-shipping_shipments_updated'
+				LEFT JOIN wp_postmeta t_status_changed ON t_status_changed.post_id = t_shipments.post_id AND t_status_changed.meta_key = 'wc-shippo-shipping_shipments_status_changed'
+			WHERE t_shipments.meta_key = 'wc-shippo-shipping_shipments' 
+				AND CAST(t_updated.meta_value AS SIGNED) <= 1660351954
+				AND (t_status_changed.meta_value IS NULL OR CAST(t_status_changed.meta_value AS SIGNED) >= 1659509554)
+			ORDER BY updated ASC
+			LIMIT 0,100
+2022-08-13T06:52:34+00:00 DEBUG [OrderShipments.php:270] Number of rows: 0
+2022-08-13T06:52:34+00:00 DEBUG [UpdateShipmentsCronTask.php:116] We have 0 shipments to check
+2022-08-13T06:52:34+00:00 DEBUG [UpdateShipmentsCronTask.php:138] finished
+2022-08-13T07:23:13+00:00 DEBUG [UpdateShipmentsCronTask.php:102] execute
+2022-08-13T07:23:13+00:00 DEBUG [OrderShipments.php:241] getInTransit, minStatusChangedTime: 1659511393, maxUpdatedTime: 1660353793, limit: 100, offset: 0
+2022-08-13T07:23:13+00:00 DEBUG [OrderShipments.php:264] Query: SELECT t_shipments.*, t_updated.meta_value AS updated, t_status_changed.meta_value AS changed
+			FROM wp_postmeta t_shipments 
+				INNER JOIN wp_postmeta t_updated ON t_updated.post_id = t_shipments.post_id AND t_updated.meta_key = 'wc-shippo-shipping_shipments_updated'
+				LEFT JOIN wp_postmeta t_status_changed ON t_status_changed.post_id = t_shipments.post_id AND t_status_changed.meta_key = 'wc-shippo-shipping_shipments_status_changed'
+			WHERE t_shipments.meta_key = 'wc-shippo-shipping_shipments' 
+				AND CAST(t_updated.meta_value AS SIGNED) <= 1660353793
+				AND (t_status_changed.meta_value IS NULL OR CAST(t_status_changed.meta_value AS SIGNED) >= 1659511393)
+			ORDER BY updated ASC
+			LIMIT 0,100
+2022-08-13T07:23:13+00:00 DEBUG [OrderShipments.php:270] Number of rows: 0
+2022-08-13T07:23:13+00:00 DEBUG [UpdateShipmentsCronTask.php:116] We have 0 shipments to check
+2022-08-13T07:23:13+00:00 DEBUG [UpdateShipmentsCronTask.php:138] finished
+2022-08-13T08:22:35+00:00 DEBUG [UpdateShipmentsCronTask.php:102] execute
+2022-08-13T08:22:35+00:00 DEBUG [OrderShipments.php:241] getInTransit, minStatusChangedTime: 1659514955, maxUpdatedTime: 1660357355, limit: 100, offset: 0
+2022-08-13T08:22:35+00:00 DEBUG [OrderShipments.php:264] Query: SELECT t_shipments.*, t_updated.meta_value AS updated, t_status_changed.meta_value AS changed
+			FROM wp_postmeta t_shipments 
+				INNER JOIN wp_postmeta t_updated ON t_updated.post_id = t_shipments.post_id AND t_updated.meta_key = 'wc-shippo-shipping_shipments_updated'
+				LEFT JOIN wp_postmeta t_status_changed ON t_status_changed.post_id = t_shipments.post_id AND t_status_changed.meta_key = 'wc-shippo-shipping_shipments_status_changed'
+			WHERE t_shipments.meta_key = 'wc-shippo-shipping_shipments' 
+				AND CAST(t_updated.meta_value AS SIGNED) <= 1660357355
+				AND (t_status_changed.meta_value IS NULL OR CAST(t_status_changed.meta_value AS SIGNED) >= 1659514955)
+			ORDER BY updated ASC
+			LIMIT 0,100
+2022-08-13T08:22:35+00:00 DEBUG [OrderShipments.php:270] Number of rows: 0
+2022-08-13T08:22:35+00:00 DEBUG [UpdateShipmentsCronTask.php:116] We have 0 shipments to check
+2022-08-13T08:22:35+00:00 DEBUG [UpdateShipmentsCronTask.php:138] finished
+2022-08-13T09:02:11+00:00 DEBUG [UpdateShipmentsCronTask.php:102] execute
+2022-08-13T09:02:11+00:00 DEBUG [OrderShipments.php:241] getInTransit, minStatusChangedTime: 1659517331, maxUpdatedTime: 1660359731, limit: 100, offset: 0
+2022-08-13T09:02:11+00:00 DEBUG [OrderShipments.php:264] Query: SELECT t_shipments.*, t_updated.meta_value AS updated, t_status_changed.meta_value AS changed
+			FROM wp_postmeta t_shipments 
+				INNER JOIN wp_postmeta t_updated ON t_updated.post_id = t_shipments.post_id AND t_updated.meta_key = 'wc-shippo-shipping_shipments_updated'
+				LEFT JOIN wp_postmeta t_status_changed ON t_status_changed.post_id = t_shipments.post_id AND t_status_changed.meta_key = 'wc-shippo-shipping_shipments_status_changed'
+			WHERE t_shipments.meta_key = 'wc-shippo-shipping_shipments' 
+				AND CAST(t_updated.meta_value AS SIGNED) <= 1660359731
+				AND (t_status_changed.meta_value IS NULL OR CAST(t_status_changed.meta_value AS SIGNED) >= 1659517331)
+			ORDER BY updated ASC
+			LIMIT 0,100
+2022-08-13T09:02:11+00:00 DEBUG [OrderShipments.php:270] Number of rows: 0
+2022-08-13T09:02:11+00:00 DEBUG [UpdateShipmentsCronTask.php:116] We have 0 shipments to check
+2022-08-13T09:02:11+00:00 DEBUG [UpdateShipmentsCronTask.php:138] finished
+2022-08-13T16:49:47+00:00 DEBUG [UpdateShipmentsCronTask.php:102] execute
+2022-08-13T16:49:47+00:00 DEBUG [OrderShipments.php:241] getInTransit, minStatusChangedTime: 1659545387, maxUpdatedTime: 1660387787, limit: 100, offset: 0
+2022-08-13T16:49:47+00:00 DEBUG [OrderShipments.php:264] Query: SELECT t_shipments.*, t_updated.meta_value AS updated, t_status_changed.meta_value AS changed
+			FROM wp_postmeta t_shipments 
+				INNER JOIN wp_postmeta t_updated ON t_updated.post_id = t_shipments.post_id AND t_updated.meta_key = 'wc-shippo-shipping_shipments_updated'
+				LEFT JOIN wp_postmeta t_status_changed ON t_status_changed.post_id = t_shipments.post_id AND t_status_changed.meta_key = 'wc-shippo-shipping_shipments_status_changed'
+			WHERE t_shipments.meta_key = 'wc-shippo-shipping_shipments' 
+				AND CAST(t_updated.meta_value AS SIGNED) <= 1660387787
+				AND (t_status_changed.meta_value IS NULL OR CAST(t_status_changed.meta_value AS SIGNED) >= 1659545387)
+			ORDER BY updated ASC
+			LIMIT 0,100
+2022-08-13T16:49:47+00:00 DEBUG [OrderShipments.php:270] Number of rows: 0
+2022-08-13T16:49:47+00:00 DEBUG [UpdateShipmentsCronTask.php:116] We have 0 shipments to check
+2022-08-13T16:49:47+00:00 DEBUG [UpdateShipmentsCronTask.php:138] finished
+2022-08-13T18:48:17+00:00 DEBUG [UpdateShipmentsCronTask.php:102] execute
+2022-08-13T18:48:17+00:00 DEBUG [OrderShipments.php:241] getInTransit, minStatusChangedTime: 1659552497, maxUpdatedTime: 1660394897, limit: 100, offset: 0
+2022-08-13T18:48:17+00:00 DEBUG [OrderShipments.php:264] Query: SELECT t_shipments.*, t_updated.meta_value AS updated, t_status_changed.meta_value AS changed
+			FROM wp_postmeta t_shipments 
+				INNER JOIN wp_postmeta t_updated ON t_updated.post_id = t_shipments.post_id AND t_updated.meta_key = 'wc-shippo-shipping_shipments_updated'
+				LEFT JOIN wp_postmeta t_status_changed ON t_status_changed.post_id = t_shipments.post_id AND t_status_changed.meta_key = 'wc-shippo-shipping_shipments_status_changed'
+			WHERE t_shipments.meta_key = 'wc-shippo-shipping_shipments' 
+				AND CAST(t_updated.meta_value AS SIGNED) <= 1660394897
+				AND (t_status_changed.meta_value IS NULL OR CAST(t_status_changed.meta_value AS SIGNED) >= 1659552497)
+			ORDER BY updated ASC
+			LIMIT 0,100
+2022-08-13T18:48:17+00:00 DEBUG [OrderShipments.php:270] Number of rows: 0
+2022-08-13T18:48:17+00:00 DEBUG [UpdateShipmentsCronTask.php:116] We have 0 shipments to check
+2022-08-13T18:48:17+00:00 DEBUG [UpdateShipmentsCronTask.php:138] finished
+2022-08-13T20:37:07+00:00 DEBUG [UpdateShipmentsCronTask.php:102] execute
+2022-08-13T20:37:07+00:00 DEBUG [OrderShipments.php:241] getInTransit, minStatusChangedTime: 1659559027, maxUpdatedTime: 1660401427, limit: 100, offset: 0
+2022-08-13T20:37:07+00:00 DEBUG [OrderShipments.php:264] Query: SELECT t_shipments.*, t_updated.meta_value AS updated, t_status_changed.meta_value AS changed
+			FROM wp_postmeta t_shipments 
+				INNER JOIN wp_postmeta t_updated ON t_updated.post_id = t_shipments.post_id AND t_updated.meta_key = 'wc-shippo-shipping_shipments_updated'
+				LEFT JOIN wp_postmeta t_status_changed ON t_status_changed.post_id = t_shipments.post_id AND t_status_changed.meta_key = 'wc-shippo-shipping_shipments_status_changed'
+			WHERE t_shipments.meta_key = 'wc-shippo-shipping_shipments' 
+				AND CAST(t_updated.meta_value AS SIGNED) <= 1660401427
+				AND (t_status_changed.meta_value IS NULL OR CAST(t_status_changed.meta_value AS SIGNED) >= 1659559027)
+			ORDER BY updated ASC
+			LIMIT 0,100
+2022-08-13T20:37:07+00:00 DEBUG [OrderShipments.php:270] Number of rows: 0
+2022-08-13T20:37:07+00:00 DEBUG [UpdateShipmentsCronTask.php:116] We have 0 shipments to check
+2022-08-13T20:37:07+00:00 DEBUG [UpdateShipmentsCronTask.php:138] finished
+2022-08-13T23:10:46+00:00 DEBUG [UpdateShipmentsCronTask.php:102] execute
+2022-08-13T23:10:46+00:00 DEBUG [OrderShipments.php:241] getInTransit, minStatusChangedTime: 1659568246, maxUpdatedTime: 1660410646, limit: 100, offset: 0
+2022-08-13T23:10:46+00:00 DEBUG [OrderShipments.php:264] Query: SELECT t_shipments.*, t_updated.meta_value AS updated, t_status_changed.meta_value AS changed
+			FROM wp_postmeta t_shipments 
+				INNER JOIN wp_postmeta t_updated ON t_updated.post_id = t_shipments.post_id AND t_updated.meta_key = 'wc-shippo-shipping_shipments_updated'
+				LEFT JOIN wp_postmeta t_status_changed ON t_status_changed.post_id = t_shipments.post_id AND t_status_changed.meta_key = 'wc-shippo-shipping_shipments_status_changed'
+			WHERE t_shipments.meta_key = 'wc-shippo-shipping_shipments' 
+				AND CAST(t_updated.meta_value AS SIGNED) <= 1660410646
+				AND (t_status_changed.meta_value IS NULL OR CAST(t_status_changed.meta_value AS SIGNED) >= 1659568246)
+			ORDER BY updated ASC
+			LIMIT 0,100
+2022-08-13T23:10:46+00:00 DEBUG [OrderShipments.php:270] Number of rows: 0
+2022-08-13T23:10:46+00:00 DEBUG [UpdateShipmentsCronTask.php:116] We have 0 shipments to check
+2022-08-13T23:10:46+00:00 DEBUG [UpdateShipmentsCronTask.php:138] finished
+2022-08-13T23:10:47+00:00 DEBUG [ImportShipmentsCronTask.php:94] execute
+2022-08-13T23:10:47+00:00 DEBUG [EndPointFactory.php:93] create, endPointName: GetTransactions
+2022-08-13T23:10:47+00:00 DEBUG [EndPointFactory.php:98] EndPoint class name: \OneTeamSoftware\ShippingCarrier\Shippo\EndPoint\GetTransactions
+2022-08-13T23:10:47+00:00 DEBUG [RequestExecutor.php:84] execute, canUse: yes, route: transactions?results=100, method: GET
+2022-08-13T23:10:47+00:00 DEBUG [Client.php:63] sendAsync, method: GET, uri: https://api.goshippo.com/transactions?results=100, headers: Array
+(
+    [Content-Type] => application/json
+    [Authorization] => ShippoToken shippo_live_e7cf86bf957ad2eba28934a0293560bdb5d498d2
+)
+, body: []
+2022-08-13T23:10:47+00:00 DEBUG [Client.php:98] Response code: 200, contents: {"next": null, "previous": null, "results": []}
+2022-08-13T23:10:47+00:00 DEBUG [JsonResponseHandler.php:28] Response: {"next": null, "previous": null, "results": []}
+2022-08-13T23:10:47+00:00 DEBUG [GetTransactions.php:118] getResponse: Array
+(
+    [next] => 
+    [previous] => 
+    [results] => Array
+        (
+        )
+
+)
+
+2022-08-13T23:10:47+00:00 DEBUG [GetTransactions.php:121] No transactions have been returned
+2022-08-13T23:58:24+00:00 DEBUG [UpdateShipmentsCronTask.php:102] execute
+2022-08-13T23:58:24+00:00 DEBUG [OrderShipments.php:241] getInTransit, minStatusChangedTime: 1659571104, maxUpdatedTime: 1660413504, limit: 100, offset: 0
+2022-08-13T23:58:24+00:00 DEBUG [OrderShipments.php:264] Query: SELECT t_shipments.*, t_updated.meta_value AS updated, t_status_changed.meta_value AS changed
+			FROM wp_postmeta t_shipments 
+				INNER JOIN wp_postmeta t_updated ON t_updated.post_id = t_shipments.post_id AND t_updated.meta_key = 'wc-shippo-shipping_shipments_updated'
+				LEFT JOIN wp_postmeta t_status_changed ON t_status_changed.post_id = t_shipments.post_id AND t_status_changed.meta_key = 'wc-shippo-shipping_shipments_status_changed'
+			WHERE t_shipments.meta_key = 'wc-shippo-shipping_shipments' 
+				AND CAST(t_updated.meta_value AS SIGNED) <= 1660413504
+				AND (t_status_changed.meta_value IS NULL OR CAST(t_status_changed.meta_value AS SIGNED) >= 1659571104)
+			ORDER BY updated ASC
+			LIMIT 0,100
+2022-08-13T23:58:24+00:00 DEBUG [OrderShipments.php:270] Number of rows: 0
+2022-08-13T23:58:24+00:00 DEBUG [UpdateShipmentsCronTask.php:116] We have 0 shipments to check
+2022-08-13T23:58:24+00:00 DEBUG [UpdateShipmentsCronTask.php:138] finished

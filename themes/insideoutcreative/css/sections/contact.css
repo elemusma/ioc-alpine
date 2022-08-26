@@ -1,0 +1,65 @@
+/* input.wpcf7-form-control.wpcf7-submit {
+    background: #ef8e25;
+    border:3px solid #ef8e25;
+    transition:all .25s ease-in-out;
+    color: white;
+    padding: 10px;
+    max-width: 200px;
+    border-radius: 25px;
+    cursor:pointer;
+}
+input.wpcf7-form-control.wpcf7-submit:hover {
+    background:white;
+    color:#ef8e25;
+}
+input, textarea,label {
+    width: 100%;
+    margin: 10px 0;
+} */
+
+input,
+textarea {
+    width: 100%;
+    border: 1px solid #eaeaea;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, .5);
+    padding: 5px 15px;
+    outline-color: var(--accent-primary);
+}
+
+label {
+    font-weight: 700;
+    font-size: 90%;
+    margin-top: 15px;
+}
+
+button[type=submit] {
+    background: var(--accent-primary);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    transition: all .25s ease-in-out;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background: var(--accent-secondary);
+}
+input#input_1_7 {
+    box-shadow: none;
+    border: none;
+}
+input#gform_submit_button_1{
+	    background: var(--accent-primary);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    transition: all .25s ease-in-out;
+    font-weight: 700;
+    cursor: pointer;
+}
+input#gform_submit_button_1:hover {
+    background: var(--accent-secondary);
+}

@@ -1,0 +1,2 @@
+[2022-08-10 22:33:51] wpdesk.DEBUG: Sender payload: {"click_action":"no","url":"https:\/\/alpineranch.net","localhost":"yes"} {"source":"wpdesk-sender"} []
+[2022-08-10 22:33:53] wpdesk.DEBUG: Sender response: {"headers":[],"body":"","response":{"code":false,"message":false},"cookies":[],"http_response":null} {"source":"wpdesk-sender"} []

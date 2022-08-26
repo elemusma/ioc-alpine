@@ -1,0 +1,32 @@
+.col-blog img.blog-img {
+    height: 150px;
+    object-fit: contain;
+}
+.blog-posts-meta a {
+    font-family: unset;
+}
+/* comments */
+.comment-form-comment label {
+    display: block;
+}
+textarea#comment {
+    width: 100%;
+}
+input#submit {
+    background:#029d95;
+    border: none;
+    padding: 10px 30px;
+    color: white;
+}
+/* pagination */
+span.page-numbers.current {
+    background: white;
+    border: 2px solid #029d95;
+    padding: 10px 20px;
+}
+a.page-numbers {
+    background: #029d95;
+    border: 2px solid #029d95;
+    padding: 10px 20px;
+    color: white;
+}

@@ -1,0 +1,10 @@
+/* footer img.logo {
+    transform: translate(-50%, -15%);
+    top: -50%;
+}
+@media screen and (max-width:500px){
+    footer img.logo {
+        transform: translate(-50%, -153px);
+        width: 90px;
+    }
+} */
