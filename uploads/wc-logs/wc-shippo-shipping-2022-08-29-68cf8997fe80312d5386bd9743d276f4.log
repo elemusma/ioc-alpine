@@ -1,0 +1,1469 @@
+2022-08-29T21:07:53+00:00 DEBUG [ShippingMethodPro.php:364] loadVendorSettings, vendorId: 1
+2022-08-29T21:07:53+00:00 DEBUG [ShippingMethod.php:406] is_available
+2022-08-29T21:07:53+00:00 DEBUG [ShippingMethod.php:512] syncSettings
+2022-08-29T21:07:53+00:00 DEBUG [ShippingMethod.php:514] General Settings: Array
+(
+    [licenseKey] => YSGI-AWVZ-SILD-AE1K-0I0X-KG41
+    [enabled] => yes
+    [debug] => yes
+    [cache] => yes
+    [cacheExpirationInSecs] => 43200
+    [timeout] => 45
+    [sandbox] => no
+    [validateProducts] => yes
+    [displayAdvancedSettings] => no
+    [combineBoxes] => yes
+    [useCubeDimensions] => no
+    [enableLiveShippingRates] => yes
+    [validateAddress] => yes
+    [requireCompanyName] => no
+    [cod] => no
+    [cod_method] => ANY
+    [insurance] => no
+    [signature] => no
+    [signature_type] => 
+    [saturday_delivery] => no
+    [hold_for_pickup] => no
+    [enableBulkShipmentCreation] => no
+    [useServiceSettingsForBulkShipmentCreation] => no
+    [requireToBulkCreateShipments] => no
+    [requireToBulkPurchasePostage] => no
+    [requireToBulkPurchaseNewPostage] => no
+    [allowMultipleShipments] => yes
+    [requireToFetchShippingRates] => yes
+    [requireToCreateShipment] => no
+    [requireToPurchasePostage] => no
+    [requireToConfirmShipmentDetails] => yes
+    [pdfAutoPrint] => no
+    [pdfAutoPrintDialog] => yes
+    [importShipmentsEnabled] => yes
+    [importShipmentsCronTaskInterval] => 86400
+    [importShipmentsMaxLimit] => 100
+    [createOrderEnabled] => no
+    [createOrderCronTaskInterval] => 86400
+    [createOrderDelayBetweenAttempts] => 172800
+    [createOrderMaxLimit] => 100
+    [updateShipmentsEnabled] => yes
+    [updateShipmentsCronTaskInterval] => 1800
+    [updateShipmentsFetchInterval] => 21600
+    [updateShipmentsStatusChangeTimeout] => 864000
+    [updateShipmentsMaxLimit] => 100
+    [shippingZones] => no
+    [displayDeliveryTime] => yes
+    [displayTrackingType] => no
+    [mediaMail] => exclude
+    [notifyForStatus] => Array
+        (
+            [0] => any
+        )
+
+    [completeOrderForStatuses] => 
+    [fetchRatesPageCondition] => 
+    [fetchRatesOnPages] => Array
+        (
+            [0] => any
+            [1] => cart
+            [2] => checkout
+        )
+
+    [defaultCountryOfOrigin] => US
+    [defaultShipmentDescription] => Freeze Dried Meals
+    [origin] => Array
+        (
+            [name] => 
+            [company] => Alpine Ranch
+            [email] => info@alpineranch.net
+            [phone] => 18008888888
+            [country] => US
+            [state] => ID
+            [city] => Emmett
+            [postcode] => 83617
+            [address] => 2447 W Highway 52
+            [address_2] => 
+        )
+
+    [weight_unit] => oz
+    [dimension_unit] => in
+    [defaultWeight] => 3.53
+    [defaultLength] => 3.94
+    [defaultWidth] => 3.94
+    [defaultHeight] => 1.97
+    [minWeight] => 3.53
+    [minLength] => 7.87
+    [minWidth] => 7.87
+    [minHeight] => 0.79
+    [liveApiToken] => shippo_live_e7cf86bf957ad2eba28934a0293560bdb5d498d2
+    [testApiToken] => 
+    [labelFileType] => PDF_4x6
+    [defaultTariff] => 
+    [minRateCost] => 
+    [maxRateCost] => 
+    [maxShippingRates] => 3
+    [weightAdjustment] => 
+    [weightAdjustmentPercent] => 
+    [priceAdjustment] => 
+    [priceAdjustmentPercent] => 
+    [createOrderForStatuses] => 
+    [defaultContents] => MERCHANDISE
+    [defaultDomesticService] => 
+    [defaultInternationService] => 
+    [useSellerAddress] => yes
+    [shippingZoneFields] => 
+    [signatureCondition] => 
+    [signatureMinTotalPrice] => 
+    [alcoholCondition] => 
+    [boxes] => Array
+        (
+            [0] => Array
+                (
+                    [enabled] => yes
+                    [boxName] => Large Priority Mail Box
+                    [type] => parcel
+                    [maxweight] => 120
+                    [length] => 12.25
+                    [width] => 12
+                    [height] => 8
+                    [thickness] => 0
+                    [weight] => 11
+                )
+
+            [1] => Array
+                (
+                    [enabled] => yes
+                    [boxName] => Flat Mailing Box
+                    [type] => parcel
+                    [maxweight] => 64
+                    [length] => 13.68
+                    [width] => 12
+                    [height] => 2.87
+                    [thickness] => 0
+                    [weight] => 5.7
+                )
+
+        )
+
+    [enableServices] => no
+    [services] => Array
+        (
+            [usps_parcel_select] => Array
+                (
+                    [enabled] => yes
+                    [title] => USPS Parcel Select 1
+                    [optionsOperator] => and
+                    [condition] => Array
+                        (
+                        )
+
+                    [priceAdjustment] => 2
+                    [priceAdjustmentPercent] => 
+                )
+
+            [usps_priority] => Array
+                (
+                    [enabled] => yes
+                    [title] => USPS Priority Mail 1
+                    [optionsOperator] => and
+                    [condition] => Array
+                        (
+                        )
+
+                    [priceAdjustment] => 1
+                    [priceAdjustmentPercent] => 
+                )
+
+            [usps_priority_express] => Array
+                (
+                    [enabled] => yes
+                    [title] => USPS Priority Mail Express 1
+                    [optionsOperator] => and
+                    [condition] => Array
+                        (
+                        )
+
+                    [priceAdjustment] => 2.5
+                    [priceAdjustmentPercent] => 
+                )
+
+        )
+
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [EndPointFactory.php:93] create, endPointName: GetCarriers
+2022-08-29T21:07:53+00:00 DEBUG [EndPointFactory.php:98] EndPoint class name: OneTeamSoftware\ShippingCarrier\AbstractAdapter\EndPoint\NotFoundEndPoint
+2022-08-29T21:07:53+00:00 DEBUG [NotFoundEndPoint.php:16] Unable to use NotFoundEndPoint
+2022-08-29T21:07:53+00:00 DEBUG [PackagePropertiesBuilder.php:88] setSettings: Array
+(
+    [signature] => no
+    [signature_type] => 
+    [mediaMail] => exclude
+    [signatureCondition] => 
+    [signatureMinTotalPrice] => 
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [RatesFilter.php:85] setSettings: Array
+(
+    [minRateCost] => 
+    [maxRateCost] => 
+    [maxShippingRates] => 3
+    [priceAdjustmentPercent] => 
+    [priceAdjustment] => 
+    [services] => Array
+        (
+            [usps_parcel_select] => Array
+                (
+                    [enabled] => yes
+                    [title] => USPS Parcel Select 1
+                    [optionsOperator] => and
+                    [condition] => Array
+                        (
+                        )
+
+                    [priceAdjustment] => 2
+                    [priceAdjustmentPercent] => 
+                )
+
+            [usps_priority] => Array
+                (
+                    [enabled] => yes
+                    [title] => USPS Priority Mail 1
+                    [optionsOperator] => and
+                    [condition] => Array
+                        (
+                        )
+
+                    [priceAdjustment] => 1
+                    [priceAdjustmentPercent] => 
+                )
+
+            [usps_priority_express] => Array
+                (
+                    [enabled] => yes
+                    [title] => USPS Priority Mail Express 1
+                    [optionsOperator] => and
+                    [condition] => Array
+                        (
+                        )
+
+                    [priceAdjustment] => 2.5
+                    [priceAdjustmentPercent] => 
+                )
+
+        )
+
+    [enableServices] => no
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [ShippingMethod.php:441] Is shipping method available? yes
+2022-08-29T21:07:53+00:00 DEBUG [ServicesMatcher.php:74] Service Settings: Array
+(
+    [usps_parcel_select] => Array
+        (
+            [enabled] => yes
+            [title] => USPS Parcel Select 1
+            [optionsOperator] => and
+            [condition] => Array
+                (
+                )
+
+            [priceAdjustment] => 2
+            [priceAdjustmentPercent] => 
+        )
+
+    [usps_priority] => Array
+        (
+            [enabled] => yes
+            [title] => USPS Priority Mail 1
+            [optionsOperator] => and
+            [condition] => Array
+                (
+                )
+
+            [priceAdjustment] => 1
+            [priceAdjustmentPercent] => 
+        )
+
+    [usps_priority_express] => Array
+        (
+            [enabled] => yes
+            [title] => USPS Priority Mail Express 1
+            [optionsOperator] => and
+            [condition] => Array
+                (
+                )
+
+            [priceAdjustment] => 2.5
+            [priceAdjustmentPercent] => 
+        )
+
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [ServicesMatcher.php:85] getServiceMatches
+2022-08-29T21:07:53+00:00 DEBUG [ServicesMatcher.php:105] addRule, service: usps_parcel_select, settings: Array
+(
+    [enabled] => yes
+    [title] => USPS Parcel Select 1
+    [optionsOperator] => and
+    [condition] => Array
+        (
+        )
+
+    [priceAdjustment] => 2
+    [priceAdjustmentPercent] => 
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [ServicesMatcher.php:135] Conditions are not set
+2022-08-29T21:07:53+00:00 DEBUG [ServicesMatcher.php:105] addRule, service: usps_priority, settings: Array
+(
+    [enabled] => yes
+    [title] => USPS Priority Mail 1
+    [optionsOperator] => and
+    [condition] => Array
+        (
+        )
+
+    [priceAdjustment] => 1
+    [priceAdjustmentPercent] => 
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [ServicesMatcher.php:135] Conditions are not set
+2022-08-29T21:07:53+00:00 DEBUG [ServicesMatcher.php:105] addRule, service: usps_priority_express, settings: Array
+(
+    [enabled] => yes
+    [title] => USPS Priority Mail Express 1
+    [optionsOperator] => and
+    [condition] => Array
+        (
+        )
+
+    [priceAdjustment] => 2.5
+    [priceAdjustmentPercent] => 
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [ServicesMatcher.php:135] Conditions are not set
+2022-08-29T21:07:53+00:00 DEBUG [ServicesMatcher.php:91] Matched Services: Array
+(
+    [usps_parcel_select] => 1
+    [usps_priority] => 1
+    [usps_priority_express] => 1
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [ShippingMethodPro.php:310] Allowed Services: Array
+(
+    [usps_parcel_select] => 1
+    [usps_priority] => 1
+    [usps_priority_express] => 1
+)
+, Enabled by default: no
+2022-08-29T21:07:53+00:00 DEBUG [RatesFilter.php:85] setSettings: Array
+(
+    [minRateCost] => 
+    [maxRateCost] => 
+    [maxShippingRates] => 3
+    [priceAdjustmentPercent] => 
+    [priceAdjustment] => 
+    [services] => Array
+        (
+            [usps_parcel_select] => Array
+                (
+                    [enabled] => yes
+                    [title] => USPS Parcel Select 1
+                    [optionsOperator] => and
+                    [condition] => Array
+                        (
+                        )
+
+                    [priceAdjustment] => 2
+                    [priceAdjustmentPercent] => 
+                )
+
+            [usps_priority] => Array
+                (
+                    [enabled] => yes
+                    [title] => USPS Priority Mail 1
+                    [optionsOperator] => and
+                    [condition] => Array
+                        (
+                        )
+
+                    [priceAdjustment] => 1
+                    [priceAdjustmentPercent] => 
+                )
+
+            [usps_priority_express] => Array
+                (
+                    [enabled] => yes
+                    [title] => USPS Priority Mail Express 1
+                    [optionsOperator] => and
+                    [condition] => Array
+                        (
+                        )
+
+                    [priceAdjustment] => 2.5
+                    [priceAdjustmentPercent] => 
+                )
+
+        )
+
+    [enableServices] => no
+    [allowedServices] => Array
+        (
+            [usps_parcel_select] => 1
+            [usps_priority] => 1
+            [usps_priority_express] => 1
+        )
+
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [ShippingMethod.php:456] Shippo Shipping - Calculate Shipping, Instance ID 0, weight unit: oz, dimension unit: in
+2022-08-29T21:07:53+00:00 DEBUG [PackagePropertiesBuilder.php:99] getPackageProperties
+2022-08-29T21:07:53+00:00 DEBUG [PackagePropertiesBuilder.php:184] addRule, propertyName: signature
+2022-08-29T21:07:53+00:00 DEBUG [PackagePropertiesBuilder.php:211] Conditions are not set
+2022-08-29T21:07:53+00:00 DEBUG [PackagePropertiesBuilder.php:239] Min Total Price is not set
+2022-08-29T21:07:53+00:00 DEBUG [PackagePropertiesBuilder.php:184] addRule, propertyName: mediaMail
+2022-08-29T21:07:53+00:00 DEBUG [PackagePropertiesBuilder.php:211] Conditions are not set
+2022-08-29T21:07:53+00:00 DEBUG [PackagePropertiesBuilder.php:239] Min Total Price is not set
+2022-08-29T21:07:53+00:00 DEBUG [PackagePropertiesBuilder.php:105] Matches: Array
+(
+    [signature] => 1
+    [mediaMail] => 1
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [PackagePropertiesBuilder.php:164] getPackageMediaProperties
+2022-08-29T21:07:53+00:00 DEBUG [PackagePropertiesBuilder.php:171] Media Mail: exclude
+2022-08-29T21:07:53+00:00 DEBUG [ShippingMethod.php:468] Destination of the package: Array
+(
+    [country] => US
+    [state] => ID
+    [postcode] => 
+    [city] => 
+    [address] => 
+    [address_1] => 
+    [address_2] => 
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [Packer.php:185] pack
+2022-08-29T21:07:53+00:00 DEBUG [BulkPacker.php:66] pack, number of items: 1
+2022-08-29T21:07:53+00:00 DEBUG [SingleItemPacker.php:89] addItem, item: Array
+(
+    [id] => 52
+    [name] => Banana Pecan Bread Pudding
+    [sku] => 
+    [value] => 13.99
+    [length] => 7
+    [width] => 5
+    [height] => 2.65
+    [weight] => 5
+    [volume] => 92.75
+)
+ with quantity 1
+2022-08-29T21:07:53+00:00 DEBUG [Fitter.php:117] Item 1 x Array
+(
+    [id] => 52
+    [name] => Banana Pecan Bread Pudding
+    [sku] => 
+    [value] => 13.99
+    [length] => 7
+    [width] => 5
+    [height] => 2.65
+    [weight] => 5
+    [volume] => 92.75
+)
+ can  fit into box Array
+(
+    [boxName] => Product
+    [type] => parcel
+    [length] => 7
+    [width] => 5
+    [height] => 2.65
+    [weight] => 0
+    [thickness] => 0
+    [maxweight] => 0
+    [maxvolume] => 92.75
+)
+ with contents weight 5 and contents volume 92.75
+2022-08-29T21:07:53+00:00 DEBUG [SingleItemPacker.php:111] pack item as a parcel Array
+(
+    [boxName] => Product
+    [type] => parcel
+    [length] => 7
+    [width] => 5
+    [height] => 2.65
+    [weight] => 5
+    [thickness] => 0
+    [maxweight] => 0
+    [maxvolume] => 92.75
+    [contentsWeight] => 5
+    [volume] => 92.75
+    [value] => 13.99
+    [items] => Array
+        (
+            [52] => Array
+                (
+                    [id] => 52
+                    [name] => Banana Pecan Bread Pudding
+                    [sku] => 
+                    [value] => 13.99
+                    [length] => 7
+                    [width] => 5
+                    [height] => 2.65
+                    [weight] => 5
+                    [volume] => 92.75
+                    [quantity] => 1
+                )
+
+        )
+
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [BulkPacker.php:96] getParcelsAsArray 
+2022-08-29T21:07:53+00:00 DEBUG [ParcelsFilters.php:57] filter, parcels before: Array
+(
+    [0] => Array
+        (
+            [boxName] => Product
+            [type] => parcel
+            [length] => 7
+            [width] => 5
+            [height] => 2.65
+            [weight] => 5
+            [thickness] => 0
+            [maxweight] => 0
+            [maxvolume] => 92.75
+            [contentsWeight] => 5
+            [volume] => 92.75
+            [value] => 13.99
+            [items] => Array
+                (
+                    [52] => Array
+                        (
+                            [id] => 52
+                            [name] => Banana Pecan Bread Pudding
+                            [sku] => 
+                            [value] => 13.99
+                            [length] => 7
+                            [width] => 5
+                            [height] => 2.65
+                            [weight] => 5
+                            [volume] => 92.75
+                            [quantity] => 1
+                        )
+
+                )
+
+        )
+
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [ParcelFilters.php:62] filter, parcels before: Array
+(
+    [0] => Array
+        (
+            [boxName] => Product
+            [type] => parcel
+            [length] => 7
+            [width] => 5
+            [height] => 2.65
+            [weight] => 5
+            [thickness] => 0
+            [maxweight] => 0
+            [maxvolume] => 92.75
+            [contentsWeight] => 5
+            [volume] => 92.75
+            [value] => 13.99
+            [items] => Array
+                (
+                    [52] => Array
+                        (
+                            [id] => 52
+                            [name] => Banana Pecan Bread Pudding
+                            [sku] => 
+                            [value] => 13.99
+                            [length] => 7
+                            [width] => 5
+                            [height] => 2.65
+                            [weight] => 5
+                            [volume] => 92.75
+                            [quantity] => 1
+                        )
+
+                )
+
+        )
+
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [ParcelFilters.php:93] filter, parcels before: Array
+(
+    [boxName] => Product
+    [type] => parcel
+    [length] => 7
+    [width] => 5
+    [height] => 2.65
+    [weight] => 5
+    [thickness] => 0
+    [maxweight] => 0
+    [maxvolume] => 92.75
+    [contentsWeight] => 5
+    [volume] => 92.75
+    [value] => 13.99
+    [items] => Array
+        (
+            [52] => Array
+                (
+                    [id] => 52
+                    [name] => Banana Pecan Bread Pudding
+                    [sku] => 
+                    [value] => 13.99
+                    [length] => 7
+                    [width] => 5
+                    [height] => 2.65
+                    [weight] => 5
+                    [volume] => 92.75
+                    [quantity] => 1
+                )
+
+        )
+
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [AbstractPropertyValuesAdjustment.php:49] Adjust property length
+2022-08-29T21:07:53+00:00 DEBUG [AbstractPropertyValuesAdjustment.php:49] Adjust property width
+2022-08-29T21:07:53+00:00 DEBUG [AbstractPropertyValuesAdjustment.php:49] Adjust property height
+2022-08-29T21:07:53+00:00 DEBUG [AbstractPropertyValuesAdjustment.php:49] Adjust property weight
+2022-08-29T21:07:53+00:00 DEBUG [AddFreightClass.php:69] getFreightClass
+2022-08-29T21:07:53+00:00 DEBUG [AddFreightClass.php:125] getParcelDensity
+2022-08-29T21:07:53+00:00 DEBUG [AddFreightClass.php:132] Dimensions in inch: Array
+(
+    [height] => 2.65
+    [width] => 5
+    [length] => 7
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [AddFreightClass.php:137] Volume in cubic feet: 0.053674768518519
+2022-08-29T21:07:53+00:00 DEBUG [AddFreightClass.php:141] Weight in pounds: 0.31249937345
+2022-08-29T21:07:53+00:00 DEBUG [AddFreightClass.php:149] Density (weight per cubic feet): 5.8220907527935
+2022-08-29T21:07:53+00:00 DEBUG [AddFreightClass.php:112] Freight Class: 175
+2022-08-29T21:07:53+00:00 DEBUG [FixItemsWeight.php:41] FixItemsWeight, items: Array
+(
+    [52] => Array
+        (
+            [id] => 52
+            [name] => Banana Pecan Bread Pudding
+            [sku] => 
+            [value] => 13.99
+            [length] => 7
+            [width] => 5
+            [height] => 2.65
+            [weight] => 5
+            [volume] => 92.75
+            [quantity] => 1
+        )
+
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [ParcelFilters.php:101] filter, parcels after: Array
+(
+    [boxName] => Product
+    [type] => parcel
+    [length] => 7
+    [width] => 5
+    [height] => 2.65
+    [weight] => 5
+    [thickness] => 0
+    [maxweight] => 0
+    [maxvolume] => 92.75
+    [contentsWeight] => 5
+    [volume] => 92.75
+    [value] => 13.99
+    [items] => Array
+        (
+            [52] => Array
+                (
+                    [id] => 52
+                    [name] => Banana Pecan Bread Pudding
+                    [sku] => 
+                    [value] => 13.99
+                    [length] => 7
+                    [width] => 5
+                    [height] => 2.65
+                    [weight] => 5
+                    [volume] => 92.75
+                    [quantity] => 1
+                )
+
+        )
+
+    [freightClass] => 175
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [ParcelFilters.php:80] filter, parcels after: Array
+(
+    [0] => Array
+        (
+            [boxName] => Product
+            [type] => parcel
+            [length] => 7
+            [width] => 5
+            [height] => 2.65
+            [weight] => 5
+            [thickness] => 0
+            [maxweight] => 0
+            [maxvolume] => 92.75
+            [contentsWeight] => 5
+            [volume] => 92.75
+            [value] => 13.99
+            [items] => Array
+                (
+                    [52] => Array
+                        (
+                            [id] => 52
+                            [name] => Banana Pecan Bread Pudding
+                            [sku] => 
+                            [value] => 13.99
+                            [length] => 7
+                            [width] => 5
+                            [height] => 2.65
+                            [weight] => 5
+                            [volume] => 92.75
+                            [quantity] => 1
+                        )
+
+                )
+
+            [freightClass] => 175
+        )
+
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [ParcelsFilters.php:63] filter, parcels after: Array
+(
+    [0] => Array
+        (
+            [boxName] => Product
+            [type] => parcel
+            [length] => 7
+            [width] => 5
+            [height] => 2.65
+            [weight] => 5
+            [thickness] => 0
+            [maxweight] => 0
+            [maxvolume] => 92.75
+            [contentsWeight] => 5
+            [volume] => 92.75
+            [value] => 13.99
+            [items] => Array
+                (
+                    [52] => Array
+                        (
+                            [id] => 52
+                            [name] => Banana Pecan Bread Pudding
+                            [sku] => 
+                            [value] => 13.99
+                            [length] => 7
+                            [width] => 5
+                            [height] => 2.65
+                            [weight] => 5
+                            [volume] => 92.75
+                            [quantity] => 1
+                        )
+
+                )
+
+            [freightClass] => 175
+        )
+
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [ShippingMethod.php:472] Number of parcels: 1
+2022-08-29T21:07:53+00:00 DEBUG [ShippingMethod.php:567] findShippingRatesForParcels
+2022-08-29T21:07:53+00:00 DEBUG [ShippingMethod.php:571] Find shipping rate for parcel #0
+2022-08-29T21:07:53+00:00 DEBUG [ShippingMethodPro.php:240] prepareParcel
+2022-08-29T21:07:53+00:00 DEBUG [ShippingMethod.php:705] getCustomerAddress -> Array
+(
+    [state] => ID
+    [country] => US
+    [email] => info@insideoutfocus.com
+    [name] => N/A
+    [phone] => 10000000000
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [ShippingMethodPro.php:268] Found PostAuthor Vendor: 1
+2022-08-29T21:07:53+00:00 DEBUG [ShippingMethodPro.php:292] Origin address: Array
+(
+    [name] => 
+    [company] => Alpine Ranch
+    [email] => info@alpineranch.net
+    [phone] => 18008888888
+    [country] => US
+    [state] => ID
+    [city] => Emmett
+    [postcode] => 83617
+    [address] => 2447 W Highway 52
+    [address_2] => 
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [ShippingMethod.php:590] findShippingRates: Array
+(
+    [boxName] => Product
+    [type] => parcel
+    [length] => 7
+    [width] => 5
+    [height] => 2.65
+    [weight] => 5
+    [thickness] => 0
+    [maxweight] => 0
+    [maxvolume] => 92.75
+    [contentsWeight] => 5
+    [volume] => 92.75
+    [value] => 13.99
+    [items] => Array
+        (
+            [52] => Array
+                (
+                    [id] => 52
+                    [name] => Banana Pecan Bread Pudding
+                    [sku] => 
+                    [value] => 13.99
+                    [length] => 7
+                    [width] => 5
+                    [height] => 2.65
+                    [weight] => 5
+                    [volume] => 92.75
+                    [quantity] => 1
+                )
+
+        )
+
+    [freightClass] => 175
+    [seller_id] => 1
+    [vendor_id] => 1
+    [signature] => no
+    [signature_type] => 
+    [insurance] => no
+    [mediaMail] => exclude
+    [destination] => Array
+        (
+            [state] => ID
+            [country] => US
+            [email] => info@insideoutfocus.com
+            [name] => N/A
+            [phone] => 10000000000
+        )
+
+    [currency] => USD
+    [carriers] => Array
+        (
+        )
+
+    [cod] => no
+    [cod_method] => ANY
+    [alcohol] => 
+    [dryIce] => 
+    [origin] => Array
+        (
+            [name] => 
+            [company] => Alpine Ranch
+            [email] => info@alpineranch.net
+            [phone] => 18008888888
+            [country] => US
+            [state] => ID
+            [city] => Emmett
+            [postcode] => 83617
+            [address] => 2447 W Highway 52
+            [address_2] => 
+        )
+
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [ApiRatesFinder.php:89] findShippingRates
+2022-08-29T21:07:53+00:00 DEBUG [ApiRatesFinder.php:141] getPackageShippingRates: Array
+(
+    [boxName] => Product
+    [type] => parcel
+    [length] => 7
+    [width] => 5
+    [height] => 2.65
+    [weight] => 5
+    [thickness] => 0
+    [maxweight] => 0
+    [maxvolume] => 92.75
+    [contentsWeight] => 5
+    [volume] => 92.75
+    [value] => 13.99
+    [items] => Array
+        (
+            [52] => Array
+                (
+                    [id] => 52
+                    [name] => Banana Pecan Bread Pudding
+                    [sku] => 
+                    [value] => 13.99
+                    [length] => 7
+                    [width] => 5
+                    [height] => 2.65
+                    [weight] => 5
+                    [volume] => 92.75
+                    [quantity] => 1
+                )
+
+        )
+
+    [freightClass] => 175
+    [seller_id] => 1
+    [vendor_id] => 1
+    [signature] => no
+    [signature_type] => 
+    [insurance] => no
+    [mediaMail] => 
+    [destination] => Array
+        (
+            [state] => ID
+            [country] => US
+            [email] => info@insideoutfocus.com
+            [name] => N/A
+            [phone] => 10000000000
+        )
+
+    [currency] => USD
+    [carriers] => Array
+        (
+        )
+
+    [cod] => no
+    [cod_method] => ANY
+    [alcohol] => 
+    [dryIce] => 
+    [origin] => Array
+        (
+            [name] => 
+            [company] => Alpine Ranch
+            [email] => info@alpineranch.net
+            [phone] => 18008888888
+            [country] => US
+            [state] => ID
+            [city] => Emmett
+            [postcode] => 83617
+            [address] => 2447 W Highway 52
+            [address_2] => 
+        )
+
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [Executor.php:29] execute, data: Array
+(
+    [licenseKey] => YSGI-AWVZ-SILD-AE1K-0I0X-KG41
+    [enabled] => yes
+    [debug] => yes
+    [cache] => yes
+    [cacheExpirationInSecs] => 43200
+    [timeout] => 45
+    [sandbox] => no
+    [validateProducts] => yes
+    [displayAdvancedSettings] => no
+    [combineBoxes] => yes
+    [useCubeDimensions] => no
+    [enableLiveShippingRates] => yes
+    [validateAddress] => yes
+    [requireCompanyName] => no
+    [cod] => no
+    [cod_method] => ANY
+    [insurance] => no
+    [signature] => no
+    [signature_type] => 
+    [saturday_delivery] => no
+    [hold_for_pickup] => no
+    [enableBulkShipmentCreation] => no
+    [useServiceSettingsForBulkShipmentCreation] => no
+    [requireToBulkCreateShipments] => no
+    [requireToBulkPurchasePostage] => no
+    [requireToBulkPurchaseNewPostage] => no
+    [allowMultipleShipments] => yes
+    [requireToFetchShippingRates] => yes
+    [requireToCreateShipment] => no
+    [requireToPurchasePostage] => no
+    [requireToConfirmShipmentDetails] => yes
+    [pdfAutoPrint] => no
+    [pdfAutoPrintDialog] => yes
+    [importShipmentsEnabled] => yes
+    [importShipmentsCronTaskInterval] => 86400
+    [importShipmentsMaxLimit] => 100
+    [createOrderEnabled] => no
+    [createOrderCronTaskInterval] => 86400
+    [createOrderDelayBetweenAttempts] => 172800
+    [createOrderMaxLimit] => 100
+    [updateShipmentsEnabled] => yes
+    [updateShipmentsCronTaskInterval] => 1800
+    [updateShipmentsFetchInterval] => 21600
+    [updateShipmentsStatusChangeTimeout] => 864000
+    [updateShipmentsMaxLimit] => 100
+    [shippingZones] => no
+    [displayDeliveryTime] => yes
+    [displayTrackingType] => no
+    [mediaMail] => 
+    [notifyForStatus] => Array
+        (
+            [0] => any
+        )
+
+    [completeOrderForStatuses] => 
+    [fetchRatesPageCondition] => 
+    [fetchRatesOnPages] => Array
+        (
+            [0] => any
+            [1] => cart
+            [2] => checkout
+        )
+
+    [defaultCountryOfOrigin] => US
+    [defaultShipmentDescription] => Freeze Dried Meals
+    [origin] => Array
+        (
+            [name] => 
+            [company] => Alpine Ranch
+            [email] => info@alpineranch.net
+            [phone] => 18008888888
+            [country] => US
+            [state] => ID
+            [city] => Emmett
+            [postcode] => 83617
+            [address] => 2447 W Highway 52
+            [address_2] => 
+        )
+
+    [weight_unit] => oz
+    [dimension_unit] => in
+    [defaultWeight] => 3.53
+    [defaultLength] => 3.94
+    [defaultWidth] => 3.94
+    [defaultHeight] => 1.97
+    [minWeight] => 3.53
+    [minLength] => 7.87
+    [minWidth] => 7.87
+    [minHeight] => 0.79
+    [liveApiToken] => shippo_live_e7cf86bf957ad2eba28934a0293560bdb5d498d2
+    [testApiToken] => 
+    [labelFileType] => PDF_4x6
+    [defaultTariff] => 
+    [minRateCost] => 
+    [maxRateCost] => 
+    [maxShippingRates] => 3
+    [weightAdjustment] => 
+    [weightAdjustmentPercent] => 
+    [priceAdjustment] => 
+    [priceAdjustmentPercent] => 
+    [createOrderForStatuses] => 
+    [defaultContents] => MERCHANDISE
+    [defaultDomesticService] => 
+    [defaultInternationService] => 
+    [useSellerAddress] => yes
+    [shippingZoneFields] => 
+    [signatureCondition] => 
+    [signatureMinTotalPrice] => 
+    [alcoholCondition] => 
+    [boxes] => Array
+        (
+            [0] => Array
+                (
+                    [enabled] => yes
+                    [boxName] => Large Priority Mail Box
+                    [type] => parcel
+                    [maxweight] => 120
+                    [length] => 12.25
+                    [width] => 12
+                    [height] => 8
+                    [thickness] => 0
+                    [weight] => 11
+                )
+
+            [1] => Array
+                (
+                    [enabled] => yes
+                    [boxName] => Flat Mailing Box
+                    [type] => parcel
+                    [maxweight] => 64
+                    [length] => 13.68
+                    [width] => 12
+                    [height] => 2.87
+                    [thickness] => 0
+                    [weight] => 5.7
+                )
+
+        )
+
+    [enableServices] => no
+    [services] => Array
+        (
+            [usps_parcel_select] => Array
+                (
+                    [enabled] => yes
+                    [title] => USPS Parcel Select 1
+                    [optionsOperator] => and
+                    [condition] => Array
+                        (
+                        )
+
+                    [priceAdjustment] => 2
+                    [priceAdjustmentPercent] => 
+                )
+
+            [usps_priority] => Array
+                (
+                    [enabled] => yes
+                    [title] => USPS Priority Mail 1
+                    [optionsOperator] => and
+                    [condition] => Array
+                        (
+                        )
+
+                    [priceAdjustment] => 1
+                    [priceAdjustmentPercent] => 
+                )
+
+            [usps_priority_express] => Array
+                (
+                    [enabled] => yes
+                    [title] => USPS Priority Mail Express 1
+                    [optionsOperator] => and
+                    [condition] => Array
+                        (
+                        )
+
+                    [priceAdjustment] => 2.5
+                    [priceAdjustmentPercent] => 
+                )
+
+        )
+
+    [boxName] => Product
+    [type] => parcel
+    [length] => 7
+    [width] => 5
+    [height] => 2.65
+    [weight] => 5
+    [thickness] => 0
+    [maxweight] => 0
+    [maxvolume] => 92.75
+    [contentsWeight] => 5
+    [volume] => 92.75
+    [value] => 13.99
+    [items] => Array
+        (
+            [52] => Array
+                (
+                    [id] => 52
+                    [name] => Banana Pecan Bread Pudding
+                    [sku] => 
+                    [value] => 13.99
+                    [length] => 7
+                    [width] => 5
+                    [height] => 2.65
+                    [weight] => 5
+                    [volume] => 92.75
+                    [quantity] => 1
+                )
+
+        )
+
+    [freightClass] => 175
+    [seller_id] => 1
+    [vendor_id] => 1
+    [destination] => Array
+        (
+            [state] => ID
+            [country] => US
+            [email] => info@insideoutfocus.com
+            [name] => N/A
+            [phone] => 10000000000
+        )
+
+    [currency] => USD
+    [carriers] => Array
+        (
+        )
+
+    [alcohol] => 
+    [dryIce] => 
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [EndPointFactory.php:93] create, endPointName: GetRates
+2022-08-29T21:07:53+00:00 DEBUG [EndPointFactory.php:98] EndPoint class name: \OneTeamSoftware\ShippingCarrier\Shippo\EndPoint\GetRates
+2022-08-29T21:07:53+00:00 DEBUG [RequestExecutor.php:84] execute, canUse: yes, route: shipments, method: POST
+2022-08-29T21:07:53+00:00 DEBUG [GetRates.php:115] getPostData: Array
+(
+    [async] => 
+    [mode] => production
+    [extra] => 
+    [metadata] => 
+    [address_from] => Array
+        (
+            [validate] => 
+            [residential] => 
+            [name] => Resident
+            [company] => Alpine Ranch
+            [email] => info@alpineranch.net
+            [phone] => 18008888888
+            [country] => US
+            [state] => ID
+            [zip] => 83617
+            [city] => Emmett
+            [street1] => 2447 W Highway 52
+            [street2] => 
+        )
+
+    [address_to] => Array
+        (
+            [validate] => 1
+            [residential] => 1
+            [name] => N/A
+            [company] => 
+            [email] => info@insideoutfocus.com
+            [phone] => 10000000000
+            [country] => US
+            [state] => ID
+            [zip] => 
+            [city] => 
+            [street1] => 
+            [street2] => 
+        )
+
+    [parcels] => Array
+        (
+            [0] => Array
+                (
+                    [weight] => 5
+                    [mass_unit] => oz
+                    [length] => 7
+                    [width] => 5
+                    [height] => 2.65
+                    [distance_unit] => in
+                )
+
+        )
+
+    [customs_declaration] => 
+)
+
+2022-08-29T21:07:53+00:00 DEBUG [Client.php:63] sendAsync, method: POST, uri: https://api.goshippo.com/shipments, headers: Array
+(
+    [Content-Type] => application/json
+    [Authorization] => ShippoToken shippo_live_e7cf86bf957ad2eba28934a0293560bdb5d498d2
+)
+, body: {"async":false,"mode":"production","extra":null,"metadata":"","address_from":{"validate":false,"residential":false,"name":"Resident","company":"Alpine Ranch","email":"info@alpineranch.net","phone":"18008888888","country":"US","state":"ID","zip":"83617","city":"Emmett","street1":"2447 W Highway 52","street2":""},"address_to":{"validate":true,"residential":true,"name":"N\/A","company":"","email":"info@insideoutfocus.com","phone":"10000000000","country":"US","state":"ID","zip":"","city":"","street1":"","street2":""},"parcels":[{"weight":5,"mass_unit":"oz","length":7,"width":5,"height":2.65,"distance_unit":"in"}],"customs_declaration":null}
+2022-08-29T21:07:54+00:00 DEBUG [Client.php:98] Response code: 201, contents: {"carrier_accounts": [], "object_created": "2022-08-29T21:07:53.849Z", "object_updated": "2022-08-29T21:07:54.772Z", "object_id": "9a919767eefd48bc926d1d1ebbb160ee", "object_owner": "logan@alpineranch.net", "status": "SUCCESS", "address_from": {"object_id": "a2bf741e366e433d8d9667b33ddbcacf", "is_complete": true, "name": "Resident", "company": "Alpine Ranch", "street_no": "", "street1": "2447 W Highway 52", "validation_results": {}, "street2": "", "street3": "", "city": "Emmett", "state": "ID", "zip": "83617", "country": "US", "phone": "18008888888", "email": "info@alpineranch.net", "is_residential": null, "test": false}, "address_to": {"object_id": "4159a89931494ac6a6ec9634b6dfeb5a", "is_complete": false, "name": "N/A", "company": "", "street_no": "", "street1": "", "validation_results": {"is_valid": false, "messages": [{"source": "Shippo Address Validator", "code": "Invalid City", "type": "address_error", "text": "The City in the address submitted is invalid. Remember, city names cannot begin with numbers."}]}, "street2": "", "street3": "", "city": "", "state": "ID", "zip": "", "country": "US", "phone": "10000000000", "email": "info@insideoutfocus.com", "is_residential": null, "test": false}, "parcels": [{"object_state": "VALID", "object_created": "2022-08-29T21:07:53.810Z", "object_updated": "2022-08-29T21:07:53.882Z", "object_id": "cdd192cceb5048b193016e0d6144a352", "object_owner": "logan@alpineranch.net", "template": null, "extra": {}, "length": "7.0000", "width": "5.0000", "height": "2.6500", "distance_unit": "in", "weight": "5.0000", "mass_unit": "oz", "value_amount": null, "value_currency": null, "metadata": "", "line_items": [], "test": false}], "shipment_date": "2022-08-29T21:07:54.607Z", "address_return": {"object_id": "a2bf741e366e433d8d9667b33ddbcacf", "is_complete": true, "name": "Resident", "company": "Alpine Ranch", "street_no": "", "street1": "2447 W Highway 52", "validation_results": {}, "street2": "", "street3": "", "city": "Emmett", "state": "ID", "zip": "83617", "country": "US", "phone": "18008888888", "email": "info@alpineranch.net", "is_residential": null, "test": false}, "alternate_address_to": null, "customs_declaration": null, "extra": {}, "rates": [], "messages": [], "metadata": "", "test": false, "order": null}
+2022-08-29T21:07:54+00:00 DEBUG [JsonResponseHandler.php:28] Response: {"carrier_accounts": [], "object_created": "2022-08-29T21:07:53.849Z", "object_updated": "2022-08-29T21:07:54.772Z", "object_id": "9a919767eefd48bc926d1d1ebbb160ee", "object_owner": "logan@alpineranch.net", "status": "SUCCESS", "address_from": {"object_id": "a2bf741e366e433d8d9667b33ddbcacf", "is_complete": true, "name": "Resident", "company": "Alpine Ranch", "street_no": "", "street1": "2447 W Highway 52", "validation_results": {}, "street2": "", "street3": "", "city": "Emmett", "state": "ID", "zip": "83617", "country": "US", "phone": "18008888888", "email": "info@alpineranch.net", "is_residential": null, "test": false}, "address_to": {"object_id": "4159a89931494ac6a6ec9634b6dfeb5a", "is_complete": false, "name": "N/A", "company": "", "street_no": "", "street1": "", "validation_results": {"is_valid": false, "messages": [{"source": "Shippo Address Validator", "code": "Invalid City", "type": "address_error", "text": "The City in the address submitted is invalid. Remember, city names cannot begin with numbers."}]}, "street2": "", "street3": "", "city": "", "state": "ID", "zip": "", "country": "US", "phone": "10000000000", "email": "info@insideoutfocus.com", "is_residential": null, "test": false}, "parcels": [{"object_state": "VALID", "object_created": "2022-08-29T21:07:53.810Z", "object_updated": "2022-08-29T21:07:53.882Z", "object_id": "cdd192cceb5048b193016e0d6144a352", "object_owner": "logan@alpineranch.net", "template": null, "extra": {}, "length": "7.0000", "width": "5.0000", "height": "2.6500", "distance_unit": "in", "weight": "5.0000", "mass_unit": "oz", "value_amount": null, "value_currency": null, "metadata": "", "line_items": [], "test": false}], "shipment_date": "2022-08-29T21:07:54.607Z", "address_return": {"object_id": "a2bf741e366e433d8d9667b33ddbcacf", "is_complete": true, "name": "Resident", "company": "Alpine Ranch", "street_no": "", "street1": "2447 W Highway 52", "validation_results": {}, "street2": "", "street3": "", "city": "Emmett", "state": "ID", "zip": "83617", "country": "US", "phone": "18008888888", "email": "info@alpineranch.net", "is_residential": null, "test": false}, "alternate_address_to": null, "customs_declaration": null, "extra": {}, "rates": [], "messages": [], "metadata": "", "test": false, "order": null}
+2022-08-29T21:07:54+00:00 DEBUG [GetRates.php:128] getResponse: Array
+(
+    [carrier_accounts] => Array
+        (
+        )
+
+    [object_created] => 2022-08-29T21:07:53.849Z
+    [object_updated] => 2022-08-29T21:07:54.772Z
+    [object_id] => 9a919767eefd48bc926d1d1ebbb160ee
+    [object_owner] => logan@alpineranch.net
+    [status] => SUCCESS
+    [address_from] => Array
+        (
+            [object_id] => a2bf741e366e433d8d9667b33ddbcacf
+            [is_complete] => 1
+            [name] => Resident
+            [company] => Alpine Ranch
+            [street_no] => 
+            [street1] => 2447 W Highway 52
+            [validation_results] => Array
+                (
+                )
+
+            [street2] => 
+            [street3] => 
+            [city] => Emmett
+            [state] => ID
+            [zip] => 83617
+            [country] => US
+            [phone] => 18008888888
+            [email] => info@alpineranch.net
+            [is_residential] => 
+            [test] => 
+        )
+
+    [address_to] => Array
+        (
+            [object_id] => 4159a89931494ac6a6ec9634b6dfeb5a
+            [is_complete] => 
+            [name] => N/A
+            [company] => 
+            [street_no] => 
+            [street1] => 
+            [validation_results] => Array
+                (
+                    [is_valid] => 
+                    [messages] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [source] => Shippo Address Validator
+                                    [code] => Invalid City
+                                    [type] => address_error
+                                    [text] => The City in the address submitted is invalid. Remember, city names cannot begin with numbers.
+                                )
+
+                        )
+
+                )
+
+            [street2] => 
+            [street3] => 
+            [city] => 
+            [state] => ID
+            [zip] => 
+            [country] => US
+            [phone] => 10000000000
+            [email] => info@insideoutfocus.com
+            [is_residential] => 
+            [test] => 
+        )
+
+    [parcels] => Array
+        (
+            [0] => Array
+                (
+                    [object_state] => VALID
+                    [object_created] => 2022-08-29T21:07:53.810Z
+                    [object_updated] => 2022-08-29T21:07:53.882Z
+                    [object_id] => cdd192cceb5048b193016e0d6144a352
+                    [object_owner] => logan@alpineranch.net
+                    [template] => 
+                    [extra] => Array
+                        (
+                        )
+
+                    [length] => 7.0000
+                    [width] => 5.0000
+                    [height] => 2.6500
+                    [distance_unit] => in
+                    [weight] => 5.0000
+                    [mass_unit] => oz
+                    [value_amount] => 
+                    [value_currency] => 
+                    [metadata] => 
+                    [line_items] => Array
+                        (
+                        )
+
+                    [test] => 
+                )
+
+        )
+
+    [shipment_date] => 2022-08-29T21:07:54.607Z
+    [address_return] => Array
+        (
+            [object_id] => a2bf741e366e433d8d9667b33ddbcacf
+            [is_complete] => 1
+            [name] => Resident
+            [company] => Alpine Ranch
+            [street_no] => 
+            [street1] => 2447 W Highway 52
+            [validation_results] => Array
+                (
+                )
+
+            [street2] => 
+            [street3] => 
+            [city] => Emmett
+            [state] => ID
+            [zip] => 83617
+            [country] => US
+            [phone] => 18008888888
+            [email] => info@alpineranch.net
+            [is_residential] => 
+            [test] => 
+        )
+
+    [alternate_address_to] => 
+    [customs_declaration] => 
+    [extra] => Array
+        (
+        )
+
+    [rates] => Array
+        (
+        )
+
+    [messages] => Array
+        (
+        )
+
+    [metadata] => 
+    [test] => 
+    [order] => 
+)
+
+2022-08-29T21:07:54+00:00 DEBUG [GetRates.php:230] Address is valid
+2022-08-29T21:07:54+00:00 DEBUG [GetRates.php:235] Address is invalid: Array
+(
+    [is_valid] => 
+    [messages] => Array
+        (
+            [0] => Array
+                (
+                    [source] => Shippo Address Validator
+                    [code] => Invalid City
+                    [type] => address_error
+                    [text] => The City in the address submitted is invalid. Remember, city names cannot begin with numbers.
+                )
+
+        )
+
+)
+
+2022-08-29T21:07:54+00:00 DEBUG [GetRates.php:146] New Response: Array
+(
+    [shipment] => Array
+        (
+            [id] => 9a919767eefd48bc926d1d1ebbb160ee::::::a2bf741e366e433d8d9667b33ddbcacf:
+            [shipment_id] => 9a919767eefd48bc926d1d1ebbb160ee
+            [rate_id] => 
+            [transaction_id] => 
+            [carrier_tracking_code] => 
+            [carrier] => 
+            [carrier_id] => 
+            [from_address_id] => a2bf741e366e433d8d9667b33ddbcacf
+            [service] => 
+            [ship_date] => 2022-08-29T21:07:54+00:00
+            [rates] => Array
+                (
+                )
+
+        )
+
+    [validation_errors] => Array
+        (
+            [destination] => Array
+                (
+                    [0] => The City in the address submitted is invalid. Remember, city names cannot begin with numbers.
+                )
+
+        )
+
+)
+
+2022-08-29T21:07:54+00:00 DEBUG [ApiRatesFinder.php:164] rates: Array
+(
+)
+
+2022-08-29T21:07:54+00:00 DEBUG [ShippingMethod.php:603] Validation Errors: Array
+(
+    [destination] => Array
+        (
+            [0] => The City in the address submitted is invalid. Remember, city names cannot begin with numbers.
+        )
+
+)
+
+2022-08-29T21:07:54+00:00 DEBUG [ShippingMethod.php:608] no shipping rates have been found
+2022-08-29T21:07:54+00:00 DEBUG [ShippingMethod.php:755] combineRates
+2022-08-29T21:07:54+00:00 DEBUG [ShippingMethod.php:791] Combined Rates: Array
+(
+)
+

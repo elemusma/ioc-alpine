@@ -39,10 +39,12 @@ endif;
             $firstName = $_POST['firstName'];
             $phone = $_POST['phone'];
             $message = $_POST['message'];
-            $math = $_POST['math'];
+            // $file = $_FILES['file'];
+            // $math = $_POST['math'];
 
 
-$to = "info@alpineranch.net, john@alpineranch.net";
+$to = "efrain@insideoutfocus.com";
+// $to = "info@alpineranch.net, john@alpineranch.net";
             
 $headers = "From: info@alpineranch.net \r\n";
 $headers .= "Reply-To: info@alpineranch.net \r\n";
@@ -85,6 +87,10 @@ $body .= '</tr>';
 $body .= '<tr>';
 $body .= '<td><p style="padding-left:10px;">Message: <br>' . $message . '</p></td>';
 $body .= '</tr>';
+
+// $body .= '<tr>';
+// $body .= '<td><p style="padding-left:10px;">File: <br>' . print_r($file) . '</p></td>';
+// $body .= '</tr>';
 
 
 
@@ -161,7 +167,7 @@ $body .= '</table>';
         echo '</section>';
     } else {
         
-echo '<form id="contact-form" class="" action="' . home_url() . '/contact/" method="POST">';
+echo '<form enctype="multipart/form-data" id="contact-form" class="" action="' . home_url() . '/contact/" method="POST">';
 
 echo '<div class="container">';
 echo '<div class="row">';
@@ -185,6 +191,10 @@ echo '<div class="col-12">          ';
 echo '<label for="message">Message</label><br>';
 echo '<textarea name="message" id="" cols="30" rows="3"></textarea>';
 echo '</div>';
+
+// echo '<div class="col-12 pt-4">';
+// echo '<input type="file" name="file" />';
+// echo '</div>';
 
 echo '<div class="col-12 pt-4">';
 echo '<button style="" type="submit">Send Message</button>';
